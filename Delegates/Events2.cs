@@ -32,17 +32,19 @@ namespace Delegates
 
     public class ProcessBusinessLogic
     {
-        public event Notify ProcessCompleted; // event
+        public event Notify  ProcessCompleted; // event
 
         public void StartProcess()
         {
             Console.WriteLine("Process Started!");
             // some code here..
-            OnProcessCompleted();
+           // OnProcessCompleted();
+            ProcessCompleted?.Invoke();
+
         }
 
 
-        protected virtual void OnProcessCompleted()
+        protected  void OnProcessCompleted()
         {
             ProcessCompleted?.Invoke();
         }

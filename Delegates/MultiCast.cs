@@ -11,7 +11,7 @@ namespace Delegates
     {
         public static void Example()
         {
-            SampleDel del1 = new SampleDel(SampleMethod1);
+            SampleDel del1 = SampleMethod1;//  new SampleDel(SampleMethod1);
             SampleDel del2 = new SampleDel(SampleMethod2);
             SampleDel del3 = del1 + del2;
        

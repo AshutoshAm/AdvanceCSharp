@@ -18,8 +18,10 @@ namespace Delegates
 
             //this is pointer of function definition
             Console.WriteLine("Hello World!");
-      
 
+            Events.Example();
+            //Second.SecondExample();
+            Console.ReadKey();
             //Add ad = new Add(Addmethod);
 
             //ad = Addmethod2;
@@ -31,14 +33,14 @@ namespace Delegates
 
 
             //callback
-            Oprations op = new Oprations();
-            op.WriteToTextFile(Callbackmethod);
+            // Oprations op = new Oprations();
+            // op.WriteToTextFile(Callbackmethod);
 
             //Second.SecondExample();
 
             //MultiCast.Example();
 
-           // Event2.Example();
+            // Event2.Example();
 
         }
 

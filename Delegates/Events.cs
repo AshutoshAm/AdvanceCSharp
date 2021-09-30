@@ -20,9 +20,10 @@ namespace Delegates
             player.OnHealthChange += playerOnHealthChange;
             player.OnHealthChange += playerOnDead;
 
-            player.Health = 10;
-            player.Health = 80;
-            player.Health = 0;
+            player.Health = 110;
+            player.Health = 800;
+            player.Health = 900;
+            player.Health = 230;
             player.Health = 180;
         }
 
@@ -61,10 +62,12 @@ namespace Delegates
             {
                 
                 this.hp = value; 
+
                 this.OnHealthChange?.Invoke(this, this.hp);
             }
         }
 
         public event EventHandler<int> OnHealthChange;
+
     }
 }
